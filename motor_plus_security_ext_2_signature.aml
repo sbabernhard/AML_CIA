@@ -17,31 +17,32 @@
 	</AdditionalInformation>
 	
 	
-	<SecMetadata>
-	<FileInformation>
-		<FileUID>c0837bfc-325b-4a61-9eeb-980a17847f31</FileUID>
-	</FileInformation>
+		<SecMetadata>
+		<FileInformation>
+			<FileUID>c0837bfc-325b-4a61-9eeb-980a17847f31</FileUID>
+		</FileInformation>
 			
 		<History>
-			<Modification id="348736" sequenceNo="1" author="Alice" timestamp="2019-01-01T09:21:14.128453+01:00">
-				<Add ElementName="Motor" SecID="ba52f4a0-7099-41ab-93c7-69d25fcbda6f">Created document, added "Motor"</Add>
+			<Modification sequenceNo="1" author="Alice" timestamp="2019-01-01T09:21:14.128453+01:00">
+				<Add ElementName="Motor" SecID="ba52f4a0-7099-41ab-93c7-69d25fcbda6f" />
 			</Modification>
 			<AMLSignature sequenceNo="1" author="Alice">IWijxQjUrcXBYoCei4QxjWo9Kg8D3p9tlWoT4t0/gyTE96639In0FZ</AMLSignature>
 		
 			<Modification sequenceNo="2" author="Bob" timestamp="2019-01-01T011:21:14.133420+01:00">
-				<Alter ElementName="Motor" SecID="ba52f4a0-7099-41ab-93c7-69d25fcbda6f">Altered "Motor": Added attributes: Torque, Voltage </Add>
-				<Add ElementName="Gearbox" SecID="d415ec2c-aa44-4fe2-a8bc-d093fe6733ae">Added "Gearbox" to "Motor"</Add>
+				<Alter ElementName="Motor" SecID="ba52f4a0-7099-41ab-93c7-69d25fcbda6f" />
+				<Add ElementName="Gearbox" SecID="d415ec2c-aa44-4fe2-a8bc-d093fe6733ae" />
 			</Modification>
 			<AMLSignature sequenceNo="2" author="Bob">IWijxQjUrcXBYoCei4QxjWo9Kg8D3p9tlWoT4t0/gyTE96639In0FZ</AMLSignature>
 		
 			<Modification sequenceNo="3" author="Charles" timestamp="2019-01-01T011:21:14.133420+01:00">
-				<Alter ElementName="Motor" SecID="ba52f4a0-7099-41ab-93c7-69d25fcbda6f">Altered "Motor": Added attributes: Torque, Voltage </Add>
-				<Remove ElementName="Gearbox" SecID="d415ec2c-aa44-4fe2-a8bc-d093fe6733ae">Removed "Gearbox".</Add>
+				<Alter ElementName="Motor" SecID="ba52f4a0-7099-41ab-93c7-69d25fcbda6f" />
+				<Remove ElementName="Gearbox" SecID="d415ec2c-aa44-4fe2-a8bc-d093fe6733ae" />
 			</Modification>
 			<AMLSignature sequenceNo="3" author="Charles">IWijxQjUrcXBYoCei4QxjWo9Kg8D3p9tlWoT4t0/gyTE96639In0FZ</AMLSignature>
 		
 		</History>
 	</SecMetadata>
+	
 	
 	
 	<AdditionalInformation AutomationMLVersion="2.0" />
