@@ -1,4 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    AML security example: Component "Motor" (type: RoleClass) with Protection level 1: Not signed and not encrypted.
+	
+	
+	Author: Bernhard Brenner, SBA Reseach, Vienna, Austria
+	<bbrenner@sba-research.org>
+-->
+
+
 <CAEXFile FileName="roleclass_motor.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<AdditionalInformation>
 		<WriterHeader>
