@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Example for a simple Instance Hierarchy including one interface class.
+	
+	Author: Bernhard Brenner, SBA Reseach, Vienna, Austria
+	<bbrenner@sba-research.org>
+-->
+
+<CAEXFile FileName="interfaceclass_powersupply.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML Editor</WriterName>
+			<WriterID>916578CA-FE0D-474E-A4FC-9E1719892369</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>4.7.0.0</WriterVersion>
+			<WriterRelease>4.7.0.0</WriterRelease>
+			<LastWritingDateTime>2019-02-01T11:13:56.1938108+01:00</LastWritingDateTime>
+			<WriterProjectTitle>unspecified</WriterProjectTitle>
+			<WriterProjectID>unspecified</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<InterfaceClassLib Name="Interfaces">
+		<Version>1.0.0</Version>
+		<InterfaceClass Name="PowerSupply">
+			<Attribute Name="MaximumPower" Unit="Watt" AttributeDataType="xs:nonNegativeInteger">
+				<Description>The maximum power that this power supply can deliver</Description>
+			</Attribute>
+		</InterfaceClass>
+	</InterfaceClassLib>
+</CAEXFile>

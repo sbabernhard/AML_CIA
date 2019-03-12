@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    AML security example: Component "Motor" (type: RoleClass) with Protection level 2: signed and not encrypted.
+	
+	
+	Author: Bernhard Brenner, SBA Reseach, Vienna, Austria
+	<bbrenner@sba-research.org>
+-->
+
+
+<CAEXFile FileName="roleclass_motor.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML Editor</WriterName>
+			<WriterID>916578CA-FE0D-474E-A4FC-9E1719892369</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>4.7.0.0</WriterVersion>
+			<WriterRelease>4.7.0.0</WriterRelease>
+			<LastWritingDateTime>2019-02-01T11:06:04.127383+01:00</LastWritingDateTime>
+			<WriterProjectTitle>unspecified</WriterProjectTitle>
+			<WriterProjectID>unspecified</WriterProjectID>
+		</WriterHeader>
+	
+		<SecMetadata>
+			<FileInformation>
+				<FileUID>c0837bfc-325b-4a61-9eeb-980a17847f31</FileUID>
+			</FileInformation>
+		
+			<History>
+				<Modification sequenceNo="1" author="Alice" timestamp="2019-01-01T09:21:14.128453+01:00">
+					<Add ElementName="Motor" ID="ba52f4a0-7099-41ab-93c7-69d25fcbda6f" laststate="EFD223037CA205401D65E87AD426BC8AA0C610FFED515A6C1205DA6EABC77418" />
+				</Modification>
+				<AMLSignature sequenceNo="1" author="Alice">IWijxQjUrcXBYoCei4QxjWo9Kg8D3p9tlWoT4t0/gyTE96639In0FZ</AMLSignature>
+			
+				<Modification sequenceNo="2" author="Bob" timestamp="2019-01-01T011:21:14.133420+01:00">
+					<Alter ElementName="Motor" ID="ba52f4a0-7099-41ab-93c7-69d25fcbda6f" laststate="A503E918A4171ED8C6B8716FFAED451B64512CBF0501816950165F076A867124"/>
+					<Add ElementName="Gearbox" ID="d415ec2c-aa44-4fe2-a8bc-d093fe6733ae" laststate="245DCF16BA1D0EEF640C5CF5DBD52BA721D8668B7BF6A411E11D7557FB3DB291"/>
+				</Modification>
+				<AMLSignature sequenceNo="2" author="Bob">IWijxQjUrcXBYoCei4QxjWo9Kg8D3p9tlWoT4t0/gyTE96639In0FZ</AMLSignature>
+			
+				<Modification sequenceNo="3" author="Charles" timestamp="2019-01-01T011:21:14.133420+01:00">
+					<Alter ElementName="Motor" ID="ba52f4a0-7099-41ab-93c7-69d25fcbda6f" laststate="904927E593C89BE5FBD85C60310931D0C419356F83340D5D1F43365FFFE826FB"/>
+					<Remove ElementName="Gearbox" ID="d415ec2c-aa44-4fe2-a8bc-d093fe6733ae" />
+				</Modification>
+				<AMLSignature sequenceNo="3" author="Charles">IWijxQjUrcXBYoCei4QxjWo9Kg8D3p9tlWoT4t0/gyTE96639In0FZ</AMLSignature>
+			</History>
+		</SecMetadata>
+		
+	</AdditionalInformation>
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<RoleClassLib Name="MotorClassLib">
+		<Version>1.0.0</Version>
+		<RoleClass Name="Motor" ID="ba52f4a0-7099-41ab-93c7-69d25fcbda6f">
+			<Attribute Name="Voltage" Unit="Volt" AttributeDataType="xs:nonNegativeInteger">
+				<Description>Maximum voltage of this motor</Description>
+				<DefaultValue>12</DefaultValue>
+			</Attribute>
+			<Attribute Name="Torque" Unit="Nm" AttributeDataType="xs:integer">
+				<Description>Maximum Torque</Description>
+				<DefaultValue>0</DefaultValue>
+			</Attribute>
+		</RoleClass>
+	</RoleClassLib>
+</CAEXFile>

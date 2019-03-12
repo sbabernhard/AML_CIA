@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Example for a simple instance hierarchy in Automation ML
+	
+	Author: Bernhard Brenner, SBA Reseach, Vienna, Austria
+	<bbrenner@sba-research.org>
+-->
+
+<CAEXFile FileName="instnchch.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML Editor</WriterName>
+			<WriterID>916578CA-FE0D-474E-A4FC-9E1719892369</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>4.7.0.0</WriterVersion>
+			<WriterRelease>4.7.0.0</WriterRelease>
+			<LastWritingDateTime>2019-02-01T11:39:22.7543437+01:00</LastWritingDateTime>
+			<WriterProjectTitle>unspecified</WriterProjectTitle>
+			<WriterProjectID>unspecified</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<InstanceHierarchy Name="Construction">
+		<Version>1.0.0</Version>
+		<InternalElement Name="PowertrainInstance" RefBaseSystemUnitPath="SystemUnitClasses/Powertrain" ID="539f856c-b17a-4155-8f54-2d5c5232fbc5">
+			<SupportedRoleClass RefRoleClassPath="Roles/Motor" />
+			<SupportedRoleClass RefRoleClassPath="Roles/Gearbox" />
+		</InternalElement>
+	</InstanceHierarchy>
+	<RoleClassLib Name="Roles">
+		<Version>1.0.0</Version>
+		<RoleClass Name="Motor">
+			<Attribute Name="Voltage" Unit="Volt" AttributeDataType="xs:nonNegativeInteger">
+				<Description>Maximum voltage of this motor</Description>
+				<DefaultValue>12</DefaultValue>
+			</Attribute>
+			<Attribute Name="Torque" Unit="Nm" AttributeDataType="xs:integer">
+				<Description>Maximum Torque</Description>
+				<DefaultValue>0</DefaultValue>
+			</Attribute>
+		</RoleClass>
+		<RoleClass Name="Gearbox" />
+	</RoleClassLib>
+	<SystemUnitClassLib Name="SystemUnitClasses">
+		<Version>1.0.0</Version>
+		<SystemUnitClass Name="Powertrain">
+			<SupportedRoleClass RefRoleClassPath="Roles/Motor" />
+			<SupportedRoleClass RefRoleClassPath="Roles/Gearbox" />
+		</SystemUnitClass>
+	</SystemUnitClassLib>
+</CAEXFile>
